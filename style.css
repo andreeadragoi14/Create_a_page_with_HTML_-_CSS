@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edefee;
+    font-family: "Markazi Text", serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 1500px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(151, 32, 11);
+    margin-top: 150px;
+    text-align: center;
+}
+
+h1:hover {
+    transform: rotate(360deg);
+    transition: 3s;
+}
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height:200px;
+}
+
+nav {
+    background-color: rgb(223, 211, 211);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 10px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 50px;
+    font-size: 18px;
+    background-color: rgb(197, 84, 64);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+nav li:hover {
+    font-size: 24px;
+    transition: 1s; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.home {
+height: 270px;
+background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)),
+         url('hairDay.png');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+      
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 5px;    
+margin-top: 10px; 
+padding-right: 10px;
+padding-left: 10px; 
+}
+
+.home p {
+    width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+}
+.home p:hover {
+    overflow:visible;
+    width:300px;
+    height: 100px;
+    border: 2px solid brown;
+    white-space: normal;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.services h2 {
+    color: rgb(151, 32, 11);
+    text-align: center;
+    font-size: 48px;
+}
+
+.services img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-top: 10px;
+    transform: rotate(0deg);
+}
+
+.services img:hover {
+    transform: rotate(360deg);
+    transition: 3s;
+}
+
+.services p {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+  
+    margin-top: 40px;
+    padding-top: 100px;
+    color:rgb(60, 83, 75)
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.info h1 {
+    color: rgb(23, 32, 29);
+    text-align: center;
+    font-size: 48px;
+}
+.info p {
+    border: 1px solid gray;
+   width:200px;
+   height: 300px;
+    text-align: center;
+    color: rgb(66, 61, 61);
+    padding: 25px;
+    background-color: rgb(238, 156, 156);
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+ 
+}
+
+.item {
+    margin: 5px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    transform: rotate(15deg) scale(1) translate(30px);
+}
+.info ul {
+    list-style-type: none;
+    border: 1px solid gray;
+    padding: 25px;
+    color: rgb(66, 61, 61);
+    text-align: center;
+    background-color: rgb(238, 156, 156);
+    line-height: 1.5;
+    width:200px;
+   height: 300px;
+}
+
+.contact form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: end;
+ margin-top: 70px;
+}
+
+.contact input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 35px;;
+}
+
+.contact textarea {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 50px;
+}
+footer img {
+    background-color: lightcoral;
+    width: 300px;
+    height: 50px;
+    object-fit: contain;
+}
+
+footer p {
+color: gray;
+font-size: 18px;
+font-weight: 700;
+}
